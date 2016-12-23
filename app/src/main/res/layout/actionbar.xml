@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0195ff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+
+                android:textColor="#e4e4e4"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/img3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:textColor="#e4e4e4" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/de_title_back"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</merge>
