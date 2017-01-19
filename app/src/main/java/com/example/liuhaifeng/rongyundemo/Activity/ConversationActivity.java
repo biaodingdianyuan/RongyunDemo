@@ -71,13 +71,10 @@ public class ConversationActivity extends FragmentActivity {
      * @param mTargetId
      */
     private void enterFragment(Conversation.ConversationType mConversationType, String mTargetId) {
-
         ConversationFragment fragment = (ConversationFragment) getSupportFragmentManager().findFragmentById(R.id.conversation);
-
         Uri uri = Uri.parse("rong://" + getApplicationInfo().packageName).buildUpon()
                 .appendPath("conversation").appendPath(mConversationType.getName().toLowerCase())
                 .appendQueryParameter("targetId", mTargetId).build();
-
         fragment.setUri(uri);
     }
 
@@ -122,10 +119,8 @@ public class ConversationActivity extends FragmentActivity {
      * 设置 actionbar 事件
      */
     private void setActionBar() {
-
         mTitle = (TextView) findViewById(R.id.txt1);
         mBack = (RelativeLayout) findViewById(R.id.back);
-
         mBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -139,7 +134,6 @@ public class ConversationActivity extends FragmentActivity {
      * 设置 actionbar title
      */
     private void setActionBarTitle(String targetid) {
-
         mTitle.setText(targetid);
     }
 
